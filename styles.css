@@ -1,27 +1,24 @@
-/*  your css code here. If applicable */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: dimgray
+    background-color: black;
 }
 
-.container {
-	display: grid;
-  grid-template-columns: repeat(40, 20px);
-  grid-template-rows: repeat(20, 20px);
-  gap: 2px;
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px; /* Adjust width to fit 20px squares with margins */
+    margin: 0 auto; /* Center the board */
 }
 
 .square {
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  transition: background-color 1s ease;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: grey;
+    margin: 2px;
+    transition: background-color 1s; /* Smooth transition for background color */
 }
 
 .square:hover {
-  background-color: #3498db;
+    background-color: red;
+    cursor: pointer;
 }
