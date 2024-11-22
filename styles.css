@@ -13,7 +13,7 @@ body {
     width: 20px;
     height: 20px;
     display: inline-block;
-    background-color: grey;
+    background-color: rgb(29, 29, 29);
     margin: 2px;
     transition: background-color 1s; /* Smooth transition for background color */
 }
